@@ -1,0 +1,115 @@
+\documentclass[12pt]{article}
+\makeatletter
+\usepackage[margin=1.5in]{geometry}
+
+\bibliographystyle{plain}
+
+\setlength{\parskip}{\baselineskip}
+
+\renewcommand*\l@section[2]{
+  \ifnum \c@tocdepth >\m@ne
+    \addpenalty{-\@highpenalty}
+    \addvspace{1.0em \@plus\p@}
+    \setlength\@tempdima{1.5em}
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      \leavevmode \bfseries
+      \advance\leftskip\@tempdima
+      \hskip -\leftskip
+      #1\nobreak
+      \xleaders\hbox{$\m@th
+      \mkern \@dotsep mu\hbox{.}\mkern \@dotsep mu$}
+      \hfil\nobreak\hb@xt@\@pnumwidth{\hss #2}\par
+      \penalty\@highpenalty
+    \endgroup
+  \fi}
+
+\begin{document}
+
+\tableofcontents
+
+\addcontentsline{toc}{section}{List of Figures}
+\listoffigures
+
+\addcontentsline{toc}{section}{List of Tables}
+\listoftables
+
+\section*{Summary}
+\addcontentsline{toc}{section}{Summary}
+\paragraph
+This report provides a critical examination of the many proposed models on the
+theory of learning styles.
+
+\section{Introduction}
+\paragraph
+The theory of learning styles has been around in some form or another for more
+than 40 years. Originated in the 1970's, the concept of learning styles has had
+a widespread influence on modern education although the credibility of the
+theory has come under serious question. This report will first cover the most
+popular flavours of the learning styles such as Neil Fleming's \textit{VARK}
+\cite{fleming2001teaching}, David Kolb's \textit{Experiential Learning}
+\cite{kolb1984experiential}, and Peter Honey and Alan Mumford's \textit{Learning
+Styles Questionnare}. The core ideas of learning styles will be critically
+examined along with the body of research conducted in the name of learning
+styles. This paper will present the modern view on learning styles, namely that
+their claims have not quantitively been shown to hold in practice and for what
+reasons.
+
+\section{An Explanation of Learning Styles}
+\paragraph
+Although many distinct models of learning styles exist, they share a core theme.
+Learning styles are broadly described as ``cognitive, affective, and
+physiological traits that are relatively stable indicators of how learners
+perceive, interact with, and respond to the learning environment''
+\cite{keefe1990developing}. This suggests that an individual will be able to
+learn at an increased rate, or with higher content retention, if they are taught
+in a way that aligns with an innate personal preference for consuming
+information. One well known model is Neil Fleming's \textit{Visual, Auditory,
+Reading, Kinesthetic} or VARK model \cite{fleming2001teaching}. This claims
+visual learners can learn best when consuming content visually, through
+pictures, visual aids such as overhead slides, graphs, or diagrams. Auditory
+learners benefit from listening to lectures, oral discussions, or tapes. Finally
+kinesthetic learners prefer to learn via physically doing, touching, and
+experimenting.
+
+\section{An Assessment of my Professional Skills}
+
+\section{Conclusions}
+\paragraph
+As discussed, the theory of learning styles has been largely discredited and
+debunked. Although much effort and research has been directed towards the
+theory, few are rigorous or conclusive enough to lend any real credibility to
+the idea that the use of learning styles in a modern education setting provides
+any kind of beneficial effect. The studies, while numerous, fail to show any
+strong correlation between the usage of learning styles in an educational
+setting, and improved content retention or higher grades on tests. In many
+cases, these studies are plagued by confirmation bias. The researcher's efforts
+to provide extra material to appeal to different learning styles only manages to
+prove that additional content or instruction improves the learning process,
+while the benifits cannot be directly attributed to the success of any Learning
+Style based theories.
+
+\paragraph
+While learning styles attempts to neatly characterize the infinitude of
+possibilities for human learning into well-defined categories, the emerging
+truth is that the learning process is much more subtle and complex. Attempting
+to restrict learning to such clearly disjoint separations such as the VARK model
+then becomes an exercise in failure.
+
+\section{Recommendations}
+\paragraph
+The author advises any readers interested in the education process and the
+psychology behind human learning to think critically about the theory of
+learning styles Before blindly incorporating Learning Style related methodology
+into a curriculum or educational program, consider the lack of credible results
+regarding any possible benefits. It is possible that by restricting yourself to
+one misguided model of education, you will limit your ability to efficiently and
+effectively instruct. Instead, focus on some of the orthogonal results that have
+come from research into learning styles. It has been conclusively proven that
+providing a wide variety of educational resources, as well as stimulating,
+engaging material contribute positively to material rentention.
+
+\bibliography{references}
+
+\end{document}
