@@ -1,11 +1,11 @@
 \documentclass[12pt]{article}
-\makeatletter
-\usepackage[margin=1.5in]{geometry}
+\usepackage{graphicx}
+\usepackage{setspace}
+\doublespacing
 
 \bibliographystyle{plain}
 
-\setlength{\parskip}{\baselineskip}
-
+\makeatletter
 \renewcommand*\l@section[2]{
   \ifnum \c@tocdepth >\m@ne
     \addpenalty{-\@highpenalty}
@@ -24,6 +24,7 @@
       \penalty\@highpenalty
     \endgroup
   \fi}
+\makeatother
 
 \begin{document}
 
@@ -35,72 +36,137 @@
 \addcontentsline{toc}{section}{List of Tables}
 \listoftables
 
-\section*{Summary}
-\addcontentsline{toc}{section}{Summary}
-\paragraph
-This report provides a critical examination of the many proposed models on the
-theory of learning styles.
+\pagebreak
 
-\section{Introduction}
-\paragraph
-The theory of learning styles has been around in some form or another for more
-than 40 years. Originated in the 1970's, the concept of learning styles has had
-a widespread influence on modern education although the credibility of the
-theory has come under serious question. This report will first cover the most
-popular flavours of the learning styles such as Neil Fleming's \textit{VARK}
-\cite{fleming2001teaching}, David Kolb's \textit{Experiential Learning}
-\cite{kolb1984experiential}, and Peter Honey and Alan Mumford's \textit{Learning
-Styles Questionnare}. The core ideas of learning styles will be critically
-examined along with the body of research conducted in the name of learning
-styles. This paper will present the modern view on learning styles, namely that
-their claims have not quantitively been shown to hold in practice and for what
-reasons.
+\addcontentsline{toc}{section}{Summary} %% 1 page
+
+\pagebreak
+
+\section{Introduction} %% 1 page
+
+\paragraph The theory of learning styles has been around in some form or another
+for more than 40 years. Originated in the 1970's, the concept of learning styles
+has had a widespread influence on modern education although the credibility of
+the theory has come under serious question. This report will first cover the
+most popular flavours of the learning styles such as Neil Fleming's
+\textit{VARK} \cite{fleming2001teaching}, David Kolb's \textit{Experiential
+Learning} \cite{kolb1984experiential}, and Peter Honey and Alan Mumford's
+\textit{Learning Styles Questionnare} \cite{}. The core ideas of learning styles
+will be critically examined, including the proposed benefits such as increaded
+content retention, increased ability to understand new material, and enhanced
+scores on testable material.
+
+\paragraph After presenting the most prevalent models of learning styles, this
+report will then go on to discuss the modern critique of the theory. Although
+the theory has existed for a substantial period, there is an alarming lack of
+scientifically rigorous studies to confirm the claims touted by proponents of
+the theory. Though there have been attempts to ground the theory in factual,
+reproducable experimentation, none have provided a satisfyingly conclusive
+answer to the question of whether the application of learning style theories in
+an educational setting has real, tangible benefit to the learning process. This
+report will draw its own conclusions as to the suitability of learning styles as
+an educational tool, and provide recommendations for any readers interested in
+employing a model of learning styles in an educational settingover 40 years
+
+%% BODY 4-6 pages, plus tables/figures
 
 \section{An Explanation of Learning Styles}
-\paragraph
-Although many distinct models of learning styles exist, they share a core theme.
-Learning styles are broadly described as ``cognitive, affective, and
-physiological traits that are relatively stable indicators of how learners
+
+\paragraph Although many distinct models of learning styles exist, they share a
+core theme.  Learning styles are broadly described as ``cognitive, affective,
+and physiological traits that are relatively stable indicators of how learners
 perceive, interact with, and respond to the learning environment''
 \cite{keefe1990developing}. This suggests that an individual will be able to
 learn at an increased rate, or with higher content retention, if they are taught
 in a way that aligns with an innate personal preference for consuming
-information. One well known model is Neil Fleming's \textit{Visual, Auditory,
-Reading, Kinesthetic} or VARK model \cite{fleming2001teaching}. This claims
-visual learners can learn best when consuming content visually, through
-pictures, visual aids such as overhead slides, graphs, or diagrams. Auditory
-learners benefit from listening to lectures, oral discussions, or tapes. Finally
+information.
+
+\paragraph One well known model is Neil Fleming's \textit{Visual, Auditory,
+Reading/Writing, Kinesthetic} or VARK model \cite{fleming2001teaching}.  Fleming
+himself describes VARK as "a starting place for a conversation among teachers
+and learners about learning" \cite{fleming2006learning}.  This claims visual
+learners can learn best when consuming content visually, through pictures,
+visual aids such as overhead slides, graphs, or diagrams. Auditory learners
+benefit from listening to lectures, oral discussions, or tapes. Finally
 kinesthetic learners prefer to learn via physically doing, touching, and
 experimenting.
 
-\section{An Assessment of my Professional Skills}
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=4in]{figures_tables/vark}
+    \caption{The VARK model}
+\end{figure}
+
+\paragraph One of the oldest models of learning styles is Kolb's
+\textit{Experiential Learning} \cite{kolb1984experiential}, proposed in 1984.
+This model outlines two related approaches for \textit{grasping} information:
+Concrete Observation and Abstract Conceptualization as well
+as two other related approached for \textit{transforming} experience:
+Reflective Observation and Active Experimentation. According to
+the model, an ideal learning process will encorporate all these experiential
+opportunities. However
+
+\begin{singlespacing}
+\begin{table}[!htbp]
+\begin{tabular}{|l|p{5cm}|p{6cm}|}
+    \hline
+    \textbf{Learning Style} & \textbf{Learning Characteristic} & \textbf{Description} \\ \hline
+    \textbf{Converger} & Abstract conceptualization + active experimentation &
+    - strong in practical application of ideas \newline
+    - unemotional \newline
+    - can focus on hypo-deductive reasoning on specific problems \\ \hline
+    \textbf{Diverger} & Concrete experience + reflective observation &
+    - strong imaginative ability \newline
+    - interested in people \newline
+    - good at generating ideas and seeing things from different perspectives \\ \hline
+    \textbf{Assimilator} & Abstract conceptualization + reflective observation &
+    - strong ability to create theoretical models \newline
+    - concerned with abstract concepts rather than people \newline
+    - excels in inductive reasoning \\ \hline
+    \textbf{Accommodator} & Concrete experience + active experimentation &
+    - greatest strength is doing things \newline
+    - solves problems intuitively \newline
+    - performs well when required to react to immediate cirumstances \\ \hline
+\end{tabular}
+\caption{Experiential Learning Styles}
+\end{table}
+\end{singlespacing}
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=4in]{figures_tables/kolb}
+    \caption{The Experiential Learning model}
+\end{figure}
+
+\section{An Assessment of my Learning Style}
 
 \section{Conclusions}
-\paragraph
-As discussed, the theory of learning styles has been largely discredited and
-debunked. Although much effort and research has been directed towards the
-theory, few are rigorous or conclusive enough to lend any real credibility to
-the idea that the use of learning styles in a modern education setting provides
-any kind of beneficial effect. The studies, while numerous, fail to show any
-strong correlation between the usage of learning styles in an educational
-setting, and improved content retention or higher grades on tests. In many
-cases, these studies are plagued by confirmation bias. The researcher's efforts
-to provide extra material to appeal to different learning styles only manages to
-prove that additional content or instruction improves the learning process,
-while the benifits cannot be directly attributed to the success of any Learning
-Style based theories.
+%% at least 3 conclusions
 
-\paragraph
-While learning styles attempts to neatly characterize the infinitude of
-possibilities for human learning into well-defined categories, the emerging
+\paragraph As discussed, the theory of learning styles has been largely
+discredited and debunked. Although much effort and research has been directed
+towards the theory, few are rigorous or conclusive enough to lend any real
+credibility to the idea that the use of learning styles in a modern education
+setting provides any kind of beneficial effect. The studies, while numerous,
+fail to show any strong correlation between the usage of learning styles in an
+educational setting, and improved content retention or higher grades on tests.
+In many cases, these studies are plagued by confirmation bias. The researcher's
+efforts to provide extra material to appeal to different learning styles only
+manages to prove that additional content or instruction improves the learning
+process, while the benifits cannot be directly attributed to the success of any
+Learning Style based theories.
+
+\paragraph While learning styles attempts to neatly characterize the infinitude
+of possibilities for human learning into well-defined categories, the emerging
 truth is that the learning process is much more subtle and complex. Attempting
 to restrict learning to such clearly disjoint separations such as the VARK model
 then becomes an exercise in failure.
 
 \section{Recommendations}
-\paragraph
-The author advises any readers interested in the education process and the
-psychology behind human learning to think critically about the theory of
+%% at least 2 recommendations
+
+\paragraph The author advises any readers interested in the education process
+and the psychology behind human learning to think critically about the theory of
 learning styles Before blindly incorporating Learning Style related methodology
 into a curriculum or educational program, consider the lack of credible results
 regarding any possible benefits. It is possible that by restricting yourself to
