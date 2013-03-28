@@ -1,29 +1,34 @@
 \documentclass[12pt]{article}
+
+\usepackage{float}
 \usepackage{graphicx}
 \usepackage{setspace}
-\doublespacing
 
+\doublespacing
+\restylefloat{table}
+\restylefloat{figure}
 \bibliographystyle{plain}
 
 \makeatletter
 \renewcommand*\l@section[2]{
-  \ifnum \c@tocdepth >\m@ne
+    \ifnum \c@tocdepth >\m@ne
     \addpenalty{-\@highpenalty}
     \addvspace{1.0em \@plus\p@}
     \setlength\@tempdima{1.5em}
     \begingroup
-      \parindent \z@ \rightskip \@pnumwidth
-      \parfillskip -\@pnumwidth
-      \leavevmode \bfseries
-      \advance\leftskip\@tempdima
-      \hskip -\leftskip
-      #1\nobreak
-      \xleaders\hbox{$\m@th
-      \mkern \@dotsep mu\hbox{.}\mkern \@dotsep mu$}
-      \hfil\nobreak\hb@xt@\@pnumwidth{\hss #2}\par
-      \penalty\@highpenalty
+    \parindent \z@ \rightskip \@pnumwidth
+    \parfillskip -\@pnumwidth
+    \leavevmode
+    \advance\leftskip\@tempdima
+    \hskip -\leftskip
+    #1\nobreak
+    \xleaders\hbox{$\m@th
+    \mkern \@dotsep mu\hbox{.}\mkern \@dotsep mu$}
+    \hfil\nobreak\hb@xt@\@pnumwidth{\hss #2}\par
+    \penalty\@highpenalty
     \endgroup
-  \fi}
+    \fi
+}
 \makeatother
 
 \begin{document}
@@ -39,6 +44,28 @@
 \pagebreak
 
 \addcontentsline{toc}{section}{Summary} %% 1 page
+
+\paragraph This report provides a comprehensive overview of some of the most
+popular models of the theory of learning styles, as well as a critical analysis
+as to the suitability of such methods in a modern educational setting. A general
+explanation of learning styles and their proposed benefits will be examined
+along with the most relevant research papers for each model.
+
+\paragraph Although much effort has been devoted by the scientific community to
+ground learning styles in scientific rigor, this report finds that there is a
+alarming lack of credible scientific results to correlate the claims put forth
+by proponents of learning styles. Recommendations discussed include:
+
+\begin{itemize}
+    \item{educational methods that have been rigorously shown to provide some of the benefits claimed of learning styles}
+    \item{aspects of learning styles that have been shown to provide educational benefits}
+    \item{todo$\dots$}
+\end{itemize}
+
+\paragraph While this report attempts to reach definitive, demonstrable
+conclusions, it acknowledges the fact that the field of human learning is highly
+complex and varied. It is impossible to provide a set of general recommendations
+that will benefit everyone.
 
 \pagebreak
 
@@ -66,14 +93,14 @@ answer to the question of whether the application of learning style theories in
 an educational setting has real, tangible benefit to the learning process. This
 report will draw its own conclusions as to the suitability of learning styles as
 an educational tool, and provide recommendations for any readers interested in
-employing a model of learning styles in an educational settingover 40 years
+employing a model of learning styles in an educational setting.
 
 %% BODY 4-6 pages, plus tables/figures
 
-\section{An Explanation of Learning Styles}
+\section{An Overview of Learning Styles}
 
 \paragraph Although many distinct models of learning styles exist, they share a
-core theme.  Learning styles are broadly described as ``cognitive, affective,
+core theme. Learning styles are broadly described as ``cognitive, affective,
 and physiological traits that are relatively stable indicators of how learners
 perceive, interact with, and respond to the learning environment''
 \cite{keefe1990developing}. This suggests that an individual will be able to
@@ -84,64 +111,68 @@ information.
 \paragraph One well known model is Neil Fleming's \textit{Visual, Auditory,
 Reading/Writing, Kinesthetic} or VARK model \cite{fleming2001teaching}.  Fleming
 himself describes VARK as "a starting place for a conversation among teachers
-and learners about learning" \cite{fleming2006learning}.  This claims visual
+and learners about learning" \cite{fleming2006learning}. The model claims visual
 learners can learn best when consuming content visually, through pictures,
 visual aids such as overhead slides, graphs, or diagrams. Auditory learners
-benefit from listening to lectures, oral discussions, or tapes. Finally
-kinesthetic learners prefer to learn via physically doing, touching, and
-experimenting.
+benefit from listening to lectures, oral discussions, or tapes. Learners of the
+reading/writing variety benefit most from committing their ideas to paper, note
+taking, and reading material. Finally, kinesthetic learners prefer to learn via
+physically doing, touching, and experimenting.
 
-\begin{figure}[!htbp]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=4in]{figures_tables/vark}
+    \includegraphics[width=5in]{figures_tables/vark}
     \caption{The VARK model}
 \end{figure}
 
-\paragraph One of the oldest models of learning styles is Kolb's
-\textit{Experiential Learning} \cite{kolb1984experiential}, proposed in 1984.
-This model outlines two related approaches for \textit{grasping} information:
-Concrete Observation and Abstract Conceptualization as well
-as two other related approached for \textit{transforming} experience:
-Reflective Observation and Active Experimentation. According to
-the model, an ideal learning process will encorporate all these experiential
-opportunities. However
+\paragraph One of the oldest models of learning styles, proposed in 1984, is
+American educational theorist David Kolb's \textit{Experiential Learning}
+\cite{kolb1984experiential}. This model outlines two related approaches for
+\textit{grasping} experience: Concrete Observation and Abstract
+Conceptualization as well as two other related approached for
+\textit{transforming} experience: Reflective Observation and Active
+Experimentation. The theory describes a cyclical model of learning, providing a
+feedback look where "knowledge is created through the transformation of
+experience" \cite{kolb1984experiential}.
 
-\begin{singlespacing}
-\begin{table}[!htbp]
-\begin{tabular}{|l|p{5cm}|p{6cm}|}
-    \hline
-    \textbf{Learning Style} & \textbf{Learning Characteristic} & \textbf{Description} \\ \hline
-    \textbf{Converger} & Abstract conceptualization + active experimentation &
-    - strong in practical application of ideas \newline
-    - unemotional \newline
-    - can focus on hypo-deductive reasoning on specific problems \\ \hline
-    \textbf{Diverger} & Concrete experience + reflective observation &
-    - strong imaginative ability \newline
-    - interested in people \newline
-    - good at generating ideas and seeing things from different perspectives \\ \hline
-    \textbf{Assimilator} & Abstract conceptualization + reflective observation &
-    - strong ability to create theoretical models \newline
-    - concerned with abstract concepts rather than people \newline
-    - excels in inductive reasoning \\ \hline
-    \textbf{Accommodator} & Concrete experience + active experimentation &
-    - greatest strength is doing things \newline
-    - solves problems intuitively \newline
-    - performs well when required to react to immediate cirumstances \\ \hline
-\end{tabular}
-\caption{Experiential Learning Styles}
-\end{table}
-\end{singlespacing}
-
-\begin{figure}[!htbp]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=4in]{figures_tables/kolb}
+    \includegraphics[width=5in]{figures_tables/kolb}
     \caption{The Experiential Learning model}
 \end{figure}
 
+\paragraph Using these four types of experiential learning, Kolb devised a
+learning style inventory used to identify four unique types of learners.
+
+\begin{singlespacing}
+    \begin{table}[H]
+        \begin{tabular}{|c|p{5cm}|p{6cm}|}
+            \hline
+            \textbf{Learning Style} & \textbf{Learning Characteristic} & \textbf{Description} \\ \hline
+            \textbf{Converger} & Abstract conceptualization + active experimentation &
+            - strong in practical application of ideas \newline
+            - unemotional \newline
+            - can focus on hypo-deductive reasoning on specific problems \\ \hline
+            \textbf{Diverger} & Concrete experience + reflective observation &
+            - strong imaginative ability \newline
+            - interested in people \newline
+            - good at generating ideas and seeing things from different perspectives \\ \hline
+            \textbf{Assimilator} & Abstract conceptualization + reflective observation &
+            - strong ability to create theoretical models \newline
+            - concerned with abstract concepts rather than people \newline
+            - excels in inductive reasoning \\ \hline
+            \textbf{Accommodator} & Concrete experience + active experimentation &
+            - greatest strength is doing things \newline
+            - solves problems intuitively \newline
+            - performs well when required to react to immediate cirumstances \\ \hline
+        \end{tabular}
+        \caption{Learning style inventory of the Experiential Learning Model}
+    \end{table}
+\end{singlespacing}
+
 \section{An Assessment of my Learning Style}
 
-\section{Conclusions}
-%% at least 3 conclusions
+\section{Conclusions} %% at least 3 conclusions
 
 \paragraph As discussed, the theory of learning styles has been largely
 discredited and debunked. Although much effort and research has been directed
@@ -162,8 +193,7 @@ truth is that the learning process is much more subtle and complex. Attempting
 to restrict learning to such clearly disjoint separations such as the VARK model
 then becomes an exercise in failure.
 
-\section{Recommendations}
-%% at least 2 recommendations
+\section{Recommendations} %% at least 2 recommendations
 
 \paragraph The author advises any readers interested in the education process
 and the psychology behind human learning to think critically about the theory of
