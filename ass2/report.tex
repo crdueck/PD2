@@ -1,16 +1,24 @@
-\documentclass[12pt]{article}
+\documentclass[12pt]{report}
 
 \usepackage{float}
-\usepackage{graphicx}
-\usepackage{setspace}
-
-\doublespacing
 \restylefloat{table}
 \restylefloat{figure}
-\bibliographystyle{plain}
+
+\usepackage[margin=1.5in]{geometry}
+\usepackage{graphicx}
+
+\usepackage{setspace}
+\doublespacing
+
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+    {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{0pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+
+\bibliographystyle{apalike}
 
 \makeatletter
-\renewcommand*\l@section[2]{
+\renewcommand*\l@chapter[2]{
     \ifnum \c@tocdepth >\m@ne
     \addpenalty{-\@highpenalty}
     \addvspace{1.0em \@plus\p@}
@@ -33,23 +41,50 @@
 
 \begin{document}
 
+\begin{singlespacing}
+    \begin{titlepage}
+        \begin{center}
+            \textbf{UNIVERSITY OF WATERLOO}\\
+            Faculty of Mathematics\\
+            \vspace{2.0in}
+            \textbf{A CRITICAL ANALYSIS OF LEARNING STYLES}\\
+            \vspace{2.0in}
+            PD2: Critical Reflection and Report Writing\\
+            Waterloo, Ontario\\
+            \vspace{2.0in}
+            Prepared by\\
+            Christopher Dueck\\
+            2A Honours Mathematics\\
+            ID 20411985\\
+            February 10, 2012\\
+        \end{center}
+    \end{titlepage}
+\end{singlespacing}
+
+\pagenumbering{roman}
+
 \tableofcontents
 
-\addcontentsline{toc}{section}{List of Figures}
+%% keep lof and lot on same page
+\begingroup
+\addcontentsline{toc}{chapter}{List of Figures}
 \listoffigures
 
-\addcontentsline{toc}{section}{List of Tables}
+\let\clearpage\relax
+\addcontentsline{toc}{chapter}{List of Tables}
 \listoftables
+\endgroup
 
-\pagebreak
+\newpage
 
-\addcontentsline{toc}{section}{Summary} %% 1 page
+\addcontentsline{toc}{chapter}{Summary} %% 1 page
 
-\paragraph This report provides a comprehensive overview of some of the most
-popular models of the theory of learning styles, as well as a critical analysis
-as to the suitability of such methods in a modern educational setting. A general
-explanation of learning styles and their proposed benefits will be examined
-along with the most relevant research papers for each model.
+\paragraph This report, titled A Critical Analysis of Learning Styles, provides
+a comprehensive overview of some of the most popular models of the theory of
+learning styles, as well as a critical analysis as to the suitability of such
+methods in a modern educational setting. A general explanation of learning
+styles and their proposed benefits will be examined along with the most relevant
+research papers for each model.
 
 \paragraph Although much effort has been devoted by the scientific community to
 ground learning styles in scientific rigor, this report finds that there is a
@@ -57,9 +92,9 @@ alarming lack of credible scientific results to correlate the claims put forth
 by proponents of learning styles. Recommendations discussed include:
 
 \begin{itemize}
-    \item{educational methods that have been rigorously shown to provide some of the benefits claimed of learning styles}
-    \item{aspects of learning styles that have been shown to provide educational benefits}
-    \item{todo$\dots$}
+    \item{PD2 is a buncha junk}
+    \item{S.W.E.D 420 blaze it}
+    \item{do this shiz l8r $\dots$}
 \end{itemize}
 
 \paragraph While this report attempts to reach definitive, demonstrable
@@ -67,37 +102,39 @@ conclusions, it acknowledges the fact that the field of human learning is highly
 complex and varied. It is impossible to provide a set of general recommendations
 that will benefit everyone.
 
-\pagebreak
+\chapter*{Introduction} %% 1 page
+\addcontentsline{toc}{chapter}{Introduction}
+\setcounter{chapter}{1}
+\pagenumbering{arabic}
 
-\section{Introduction} %% 1 page
+\paragraph First recognized in the 1970's, the concept of learning styles has
+had a widespread influence on modern education theory ever since, although
+recently the credibility of the theory has come under serious question. This
+report will first cover the most popular flavours of the learning styles such as
+Neil Fleming's VARK \cite{fleming2001teaching}, David Kolb's Experiential
+Learning \cite{kolb1984experiential}, and Peter Honey and Alan Mumford's
+Learning Styles Questionnare \cite{}. The core ideas of learning styles will be
+explored, including the proposed benefits such as increased content retention,
+increased ability to understand new material, and enhanced scores on testable
+material.
 
-\paragraph The theory of learning styles has been around in some form or another
-for more than 40 years. Originated in the 1970's, the concept of learning styles
-has had a widespread influence on modern education although the credibility of
-the theory has come under serious question. This report will first cover the
-most popular flavours of the learning styles such as Neil Fleming's
-\textit{VARK} \cite{fleming2001teaching}, David Kolb's \textit{Experiential
-Learning} \cite{kolb1984experiential}, and Peter Honey and Alan Mumford's
-\textit{Learning Styles Questionnare} \cite{}. The core ideas of learning styles
-will be critically examined, including the proposed benefits such as increaded
-content retention, increased ability to understand new material, and enhanced
-scores on testable material.
-
-\paragraph After presenting the most prevalent models of learning styles, this
-report will then go on to discuss the modern critique of the theory. Although
-the theory has existed for a substantial period, there is an alarming lack of
-scientifically rigorous studies to confirm the claims touted by proponents of
+\paragraph After discussing the most prevalent models of learning styles, this
+report will then present the modern critique of the theory. Although learning
+styles have existed for a substantial period of time, there is an alarming lack
+of scientifically rigorous studies to confirm the claims touted by proponents of
 the theory. Though there have been attempts to ground the theory in factual,
 reproducable experimentation, none have provided a satisfyingly conclusive
-answer to the question of whether the application of learning style theories in
-an educational setting has real, tangible benefit to the learning process. This
-report will draw its own conclusions as to the suitability of learning styles as
-an educational tool, and provide recommendations for any readers interested in
-employing a model of learning styles in an educational setting.
+answer to the question of whether the application of learning style based theory
+in an educational setting provides measurable benefit to the learning process.
+This report will draw its own conclusions as to the suitability of learning
+styles as an educational tool, and provide recommendations for any readers
+interested in employing a model of learning styles in an educational setting.
 
-%% BODY 4-6 pages, plus tables/figures
+%% BODY 4-6 pages
 
-\section{An Overview of Learning Styles}
+\chapter*{An Overview of Learning Styles}
+\addcontentsline{toc}{chapter}{An Overview of Learning Styles}
+\setcounter{chapter}{2}
 
 \paragraph Although many distinct models of learning styles exist, they share a
 core theme. Learning styles are broadly described as ``cognitive, affective,
@@ -108,16 +145,14 @@ learn at an increased rate, or with higher content retention, if they are taught
 in a way that aligns with an innate personal preference for consuming
 information.
 
+\section {VARK Model}
+
 \paragraph One well known model is Neil Fleming's \textit{Visual, Auditory,
 Reading/Writing, Kinesthetic} or VARK model \cite{fleming2001teaching}.  Fleming
 himself describes VARK as "a starting place for a conversation among teachers
-and learners about learning" \cite{fleming2006learning}. The model claims visual
-learners can learn best when consuming content visually, through pictures,
-visual aids such as overhead slides, graphs, or diagrams. Auditory learners
-benefit from listening to lectures, oral discussions, or tapes. Learners of the
-reading/writing variety benefit most from committing their ideas to paper, note
-taking, and reading material. Finally, kinesthetic learners prefer to learn via
-physically doing, touching, and experimenting.
+and learners about learning" \cite{fleming2006learning}. VARK attempts to
+classify an individual learner into the sensory category from which they benefit
+the most.
 
 \begin{figure}[H]
     \centering
@@ -125,14 +160,27 @@ physically doing, touching, and experimenting.
     \caption{The VARK model}
 \end{figure}
 
+\paragraph The model claims visual learners can learn best when consuming
+content visually, through pictures, visual aids such as overhead slides,
+blackboard visuals graphs, or diagrams. Auditory learners benefit from listening
+to lectures, oral discussions, or tapes. Learners of the reading/writing variety
+benefit most from committing their ideas to paper, note taking, and relevant
+reading material.  Finally, kinesthetic learners prefer to learn via physically
+doing, touching, and experimenting. Although it is possible for a learner to be
+competent using more than one learning style, Fleming claims that information
+can be consumed most efficiently when the dominant learning style of a student
+is thoroughly utilized.
+
+\section{Experiential Learning Model}
+
 \paragraph One of the oldest models of learning styles, proposed in 1984, is
-American educational theorist David Kolb's \textit{Experiential Learning}
+American educational theorist David Kolb's Experiential Learning
 \cite{kolb1984experiential}. This model outlines two related approaches for
 \textit{grasping} experience: Concrete Observation and Abstract
-Conceptualization as well as two other related approached for
+Conceptualization, as well as two other related approaches for
 \textit{transforming} experience: Reflective Observation and Active
-Experimentation. The theory describes a cyclical model of learning, providing a
-feedback look where "knowledge is created through the transformation of
+Experimentation. The theory describes a cyclical model of learning that provides
+a feedback loop where "knowledge is created through the transformation of
 experience" \cite{kolb1984experiential}.
 
 \begin{figure}[H]
@@ -142,47 +190,75 @@ experience" \cite{kolb1984experiential}.
 \end{figure}
 
 \paragraph Using these four types of experiential learning, Kolb devised a
-learning style inventory which can be used to identify four unique types of
-learners.
+learning style inventory which can be used to identify four unique methods of
+learning based on which experiential approaches are dominant.
+
+Each style of learning represents a choice. In practice, it is
+impossible to simultaneously play an instrument (Concrete Experience) and read a
+instructional book on guitar playing (Abstract Conceptualization). Thus it is
+necessary to resolve the conflict by making a choice between the two methods. As
+one begins developing a preference as to which method of learning one is best
+suited, this accumulated characteristic becomes what is known as an experiential
+learning style.
 
 \begin{singlespacing}
     \begin{table}[H]
-        \begin{tabular}{|c|p{5cm}|p{6cm}|}
+        \hspace*{-0.5in}
+        \begin{tabular}{|c|p{2in}|p{2.5in}|}
             \hline
             \textbf{Learning Style} & \textbf{Learning Characteristic} & \textbf{Description} \\ \hline
-            \textbf{Converger} & Abstract conceptualization + active experimentation &
+            \textbf{Converger} & Abstract conceptualization \newline + active experimentation &
             - strong in practical application of ideas \newline
-            - can focus on hypo-deductive reasoning on specific problems \newline
+            - can focus on deductive reasoning on specific problems \newline
             - unemotional \\ \hline
-            \textbf{Diverger} & Concrete experience + reflective observation &
+            \textbf{Diverger} & Concrete experience \newline + reflective observation &
             - strong imaginative ability \newline
             - interested in people \newline
             - good at generating ideas and seeing things from different perspectives \\ \hline
-            \textbf{Assimilator} & Abstract conceptualization + reflective observation &
+            \textbf{Assimilator} & Abstract conceptualization \newline + reflective observation &
             - strong ability to create theoretical models \newline
             - concerned with abstract concepts rather than people \newline
             - excels in inductive reasoning \\ \hline
-            \textbf{Accommodator} & Concrete experience + active experimentation &
+            \textbf{Accommodator} & Concrete experience \newline + active experimentation &
             - greatest strength is doing things \newline
             - solves problems intuitively \newline
-            - performs well when required to react to immediate circumstances \\ \hline
+            - performs well when required to react quickly \\ \hline
         \end{tabular}
-        \caption{Learning style inventory of the Experiential Learning Model}
+        \caption{Kolb's learning style inventory}
     \end{table}
 \end{singlespacing}
 
-\section{Critique of Learning Styles}
+\section{Honey and Mumford Model}
 
-\paragraph Although the theory of learning styles claims to be able to provide
-a more effective and efficient educational model, there has been a significant
+\paragraph The Honey and Mumford model of learning styles is based in part on
+Kolb's experiential learning model, with some changes made to accord with the
+managerial experiences of decision making and problem solving.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=5in]{figures_tables/honey}
+    \caption{The Honey and Mumford model}
+\end{figure}
+
+\chapter*{Critique of Learning Styles}
+\addcontentsline{toc}{chapter}{Critique of Learning Styles}
+\setcounter{chapter}{3}
+
+\paragraph Although the theory of learning styles claims to be able to provide a
+more effective and efficient educational model, there has been a significant
 lack of rigorous scientific research to support these claims. In order to
 properly demonstrate the benefits of a learning style model, it is necessary to
-first identify the individual learning style of a student according to the
-model which is under scrutiny and then randomly assign them to any of the
-learning methods included in the model. The student's performance on a variety
-of tasks would then be thoroughly tested before and after instruction in
-order to determine if the application of a particular learning style positively
-impacted the student.
+first identify the individual learning style of a student according to the model
+which is under scrutiny and then randomly assign them to any of the learning
+methods included in the model. The student's performance on a variety of tasks
+would then be thoroughly tested before and after instruction in order to
+determine if the application of a particular learning style positively impacted
+the student.
+
+\chapter*{Conclusions and Recommendations}
+\addcontentsline{toc}{chapter}{Conclusions and Recommendations}
+\setcounter{chapter}{4}
+\setcounter{section}{0}
 
 \section{Conclusions} %% at least 3 conclusions
 
@@ -197,7 +273,7 @@ In many cases, these studies are plagued by confirmation bias. The researcher's
 efforts to provide extra material to appeal to different learning styles only
 manages to prove that additional content or instruction improves the learning
 process, while the benifits cannot be directly attributed to the success of any
-Learning Style based theories.
+learning style based theories.
 
 \paragraph While learning styles attempts to neatly characterize the infinitude
 of possibilities for human learning into well-defined categories, the emerging
