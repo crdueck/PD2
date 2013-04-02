@@ -1,5 +1,7 @@
 \documentclass[12pt]{report}
 
+\usepackage{amsfonts}
+\usepackage{enumitem}
 \usepackage{float}
 \restylefloat{table}
 \restylefloat{figure}
@@ -13,7 +15,7 @@
 \usepackage{titlesec}
 \titleformat{\chapter}[display]
     {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{0pt}{\Huge}
-\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+\titlespacing*{\chapter}{0pt}{0pt}{10pt}
 
 \bibliographystyle{apalike}
 
@@ -40,26 +42,6 @@
 \makeatother
 
 \begin{document}
-
-\begin{singlespacing}
-    \begin{titlepage}
-        \begin{center}
-            \textbf{UNIVERSITY OF WATERLOO}\\
-            Faculty of Mathematics\\
-            \vspace{2.0in}
-            \textbf{A CRITICAL ANALYSIS OF LEARNING STYLES}\\
-            \vspace{2.0in}
-            PD2: Critical Reflection and Report Writing\\
-            Waterloo, Ontario\\
-            \vspace{2.0in}
-            Prepared by\\
-            Christopher Dueck\\
-            2A Honours Mathematics\\
-            ID 20411985\\
-            April 2, 2012\\
-        \end{center}
-    \end{titlepage}
-\end{singlespacing}
 
 \pagenumbering{roman}
 
@@ -108,14 +90,18 @@ recommendations that will benefit everyone.
 \setlength{\emergencystretch}{3em}
 
 \paragraph Since its recognition in the 1970's, the concept of learning styles
-has had a widespread influence on modern education theory, although recently
-the credibility of the theory has come under serious question. This report will
+has had a widespread influence on modern education theory, although recently the
+credibility of the theory has come under serious question. This report will
 first cover the most popular flavours of the learning styles such as Neil
 Fleming's VARK \cite{fleming2001teaching}, David Kolb's Experiential Learning
 \cite{kolb1984experiential}, and Peter Honey and Alan Mumford's Learning Styles
 Questionnaire \cite{honey1989learning}.  The core ideas of learning styles will
 be explored, including the proposed benefits such as increased content
 retention, and enhanced scores on testable material.
+
+%The author will then
+%discuss which learning style is most descriptive of their own personal learning
+%habits.
 
 \setlength{\emergencystretch}{0em}
 
@@ -151,7 +137,7 @@ information.
 
 \paragraph One well known model is Neil Fleming's \textit{Visual, Auditory,
 Reading/Writing, Kinesthetic} or VARK model \cite{fleming2001teaching}.
-Fleming himself describes VARK as "a starting place for a conversation among
+Fleming himself describes VARK as ``a starting place for a conversation among
 teachers and learners about learning" \cite{fleming2006learning}. VARK attempts
 to classify an individual learner into the sensory category from which they
 benefit the most. Although it is possible for a learner to be competent using
@@ -207,19 +193,19 @@ characteristic becomes what is known as an Experiential Learning style.
         \begin{tabular}{|c|p{2in}|p{2.5in}|}
             \hline
             \textbf{Learning Style} & \textbf{Learning Characteristic} & \textbf{Description} \\ \hline
-            \textbf{Converger} & Abstract conceptualization \newline + active experimentation &
+            \textbf{Converger} & Abstract Conceptualization \newline + Active Experimentation &
             - strong in practical application of ideas \newline
             - can focus on deductive reasoning on specific problems \newline
             - unemotional \\ \hline
-            \textbf{Diverger} & Concrete experience \newline + reflective observation &
+            \textbf{Diverger} & Concrete Experience \newline + Reflective Observation &
             - strong imaginative ability \newline
             - interested in people \newline
             - good at generating ideas and seeing things from different perspectives \\ \hline
-            \textbf{Assimilator} & Abstract conceptualization \newline + reflective observation &
+            \textbf{Assimilator} & Abstract Conceptualization \newline + Reflective Observation &
             - strong ability to create theoretical models \newline
             - concerned with abstract concepts rather than people \newline
             - excels in inductive reasoning \\ \hline
-            \textbf{Accommodator} & Concrete experience \newline + active experimentation &
+            \textbf{Accommodator} & Concrete Experience \newline + Active Experimentation &
             - greatest strength is doing things \newline
             - solves problems intuitively \newline
             - performs well when required to react quickly \\ \hline
@@ -249,9 +235,32 @@ simple agree/disagree questionnaire designed to help uncover learning
 preferences in individuals who have may not have ever given any consideration
 as to how they learn best.
 
+\chapter*{Analysis of My Learning Style}
+\addcontentsline{toc}{chapter}{Analysis of My Learning Style}
+\setcounter{chapter}{3}
+
+\paragraph Using the Kolb Experiential Learning Model, the author of this report
+would fall into Abstract Conceptualisation category. As a mathematics student,
+much of my work directly involves abstract conceptualisation to comprehend
+highly abstract mathematical concepts. Very little in mathematics could be
+considered to fall under the Active Experimentation, Concrete Experience, or
+Reflective Observation categories. As such, I have developed a preference for
+this abstract model of learning, and prefer to learn new topics using a
+high-level, conceptual approach. Once I have a solid grasp on the high-level
+aspects of a new concept, I find it much easier to concretely apply those
+concepts in practice.
+
+\paragraph The Kolb Learning Style Inventory learning style categorizes me as an
+Assimilator: strong ability for theoretical modeling, concerned with abstract
+concepts, and excellent inductive reasoning. All of these are useful traits for
+a student in mathematics. The Assimilator style emphasizes Abstract
+Conceptualisation and Reflective Observation, which I think is a reasonable
+description of myself, as I often reflect on experiences after the fact, in
+order to gain a better understanding.
+
 \chapter*{Critique of Learning Styles}
 \addcontentsline{toc}{chapter}{Critique of Learning Styles}
-\setcounter{chapter}{3}
+\setcounter{chapter}{4}
 
 \paragraph Although the theory of learning styles claims to be able to provide
 a more effective and efficient educational model, there is a significant lack
@@ -304,7 +313,7 @@ learning.
 
 \chapter*{Conclusions and Recommendations}
 \addcontentsline{toc}{chapter}{Conclusions and Recommendations}
-\setcounter{chapter}{4}
+\setcounter{chapter}{5}
 \setcounter{section}{0}
 
 \section{Conclusions} %% at least 3 conclusions
@@ -324,11 +333,13 @@ troubling, there are also flaws that can arise during the implementation of a
 learning style method. Most commonly, learning style questionnaires are used to
 measure an individual's learning style preference. However this is inherently
 biased. Self-reports such as these very rarely produce a true sampling of
-learning behaviour, but instead reflect the learner's own impression of how
-they learn, or an similarly influenced impression which may be affected by what
-the subject thinks the conductor of the questionnaire wants to hear. Methods
-such as these learning style questionnaires or other such self evaluations
-cannot be used as a reliable instrument with which to conduct research.
+learning behaviour, but instead reflect the learner's own impression of how they
+learn, or an similarly influenced impression which may be affected by what the
+subject thinks the conductor of the questionnaire wants to hear. Methods such as
+these learning style questionnaires or other such self evaluations cannot be
+used as a reliable instrument with which to conduct research and thus the
+results of studies conducted using these sub-par methods can not be considered
+reliable.
 
 \section{Recommendations} %% at least 2 recommendations
 
@@ -340,19 +351,55 @@ results regarding the proposed benefits of the theory. Many studies conclude
 that the positive effect of a learning style based curriculum is negligible,
 and thus the resources spent investing in the program are wasted.
 
-\paragraph While the application of learning styles cannot be shown to produce
-a tangible improvement in the learning process, what can be taken from the
-theory is that the process of human learning exists as an incredibly varied
-spectrum of possibilities. Instead of narrowing one's focus on one percieved
-"special" section of this spectrum, it is wise to instead attempt to
-incorporate a multitude of methods in order to provide a rich, varied
-curriculum that will engage a wide audience of learners. The author recommends
-that one take into account the important characteristics of learning that each
-learning style method has classified and tailor an educational program to
-target these characteristics in concert rather than isolation. Instead of
-hoping to find gains on an individual level, this approach will allow you to
-create a learning process that provides benefit to a deeper range of learners.
+\paragraph While the application of learning styles cannot be shown to produce a
+tangible improvement in the learning process, what can be taken from the theory
+is that the process of human learning exists as an incredibly varied spectrum of
+possibilities. Instead of narrowing one's focus on one perceived "special"
+section of this spectrum, it is wise to instead attempt to incorporate a
+multitude of methods in order to provide a rich, varied curriculum that will
+engage a wide audience of learners. The author recommends that one take into
+account the important characteristics of learning that each learning style
+method has classified and tailor an educational program to target these
+characteristics in concert rather than isolation. Instead of hoping to find
+gains on an individual level, this approach will allow you to create a learning
+process that provides benefit to a deeper range of learners.
 
 \bibliography{references}
+
+\chapter*{Appendices}
+
+Your report must:
+
+\begin{itemize}[label={\checkmark}]
+    \item{Include 4-6 pages of body content. Figures or tables that are included
+        in the body are excluded in the 4-6 page count. Adherence to the 3Cs (clarity, conciseness, and coherence)
+        will allow you to meet this page limit}
+    \item{Include at least one table}
+    \item{Include at least one figure}
+    \item{Use a 12-point serif font}
+    \item{Be double-spaced}
+    \item{Be written in formal, standard English, with no contractions}
+    \item{Be spell-checked and proofread}
+    \item{Include pages numbered according to the conventions described in the Report Resources tab}
+\end{itemize}
+
+\noindent Your report must conform to the format and conventions described in the Report
+Resources page.  You do not have to bind your report or include a front cover
+because you will submit your report to us online.  Your report will include the
+following pages and sections:
+
+\begin{itemize}[label={\checkmark}]
+    \item{Title page}
+    \item{Letter of submittal (addressed to the PD2 course instructor)}
+    \item{Table of contents}
+    \item{List of Figures and Tables, if appropriate}
+    \item{Summary}
+    \item{Introduction}
+    \item{Body (that includes both an objective analytical component and a reflective component)}
+    \item{Conclusions (the section is ``conclusions" as in ``findings", not ``conclusion")}
+    \item{Recommendations (specific, measurable, and attainable)}
+    \item{Reference}
+    \item{Appendices (you need at least one appendix which includes this checklist)}
+\end{itemize}
 
 \end{document}
